@@ -1,0 +1,32 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1726071546
+icon.png::CompressedTexture2D::6094567605780906540::1726068670::1726068729::1::::<><>::
+::res://assets/::1726069324
+player.png::CompressedTexture2D::3526414720742632375::1663159594::1725955036::1::::<><>::
+Tower.png::CompressedTexture2D::4271895507143057212::1659722530::1725958218::1::::<><>::
+Tower_Destroyed.png::CompressedTexture2D::3629304003098955632::1659722516::1726069041::1::::<><>::
+::res://assets/enemies/::1726069309
+Explosions.png::CompressedTexture2D::7119995342825350445::1667423219::1726069308::1::::<><>::
+goblin_enemy.png::CompressedTexture2D::1554932727740506743::1667422390::1726069309::1::::<><>::
+skull_enemy.png::CompressedTexture2D::5049837398089091763::1667504586::1726069308::1::::<><>::
+::res://assets/Fonts/::1725966357
+Retro Gaming.ttf::FontFile::7749244730104002733::1550858430::1725966357::1::::<><>::
+::res://assets/GUI/::1725968852
+bg.png::CompressedTexture2D::1076708268067934253::1725968773::1725968852::1::::<><>::
+Button_Blue.png::CompressedTexture2D::4842920083110147451::1671767311::1725968356::1::::<><>::
+Button_Blue_Pressed.png::CompressedTexture2D::4592281110880133472::1671767328::1725968356::1::::<><>::
+health_bar_underlayer.png::CompressedTexture2D::4269454430703724407::1671766270::1725966143::1::::<><>::
+::res://assets/tilemap/::1726069326
+Tilemap_Elevation.png::CompressedTexture2D::3043959897632633185::1663161376::1726069326::1::::<><>::
+Tilemap_Flat.png::CompressedTexture2D::6360506933189529936::1663161352::1726069326::1::::<><>::
+::res://src/::1726071501
+enemy.gd::GDScript::-1::1726070373::0::1::::<>Area2D<>::
+enemy.tscn::PackedScene::8054366208078945948::1726071479::0::1::::<><>::uid://cd7gc4jw02yop::::res://assets/enemies/skull_enemy.png<>res://src/enemy.gd<>uid://c8o8jvhctoiwb::::res://assets/enemies/Explosions.png
+main.gd::GDScript::-1::1726071028::0::1::::<>Node<>::
+main.tscn::PackedScene::8731755561965472305::1726071479::0::1::::<><>::res://src/main.gd<>uid://plth0obt11t6::::res://assets/GUI/bg.png<>uid://ca87gli1isjah::::res://assets/GUI/Button_Blue.png<>uid://b6osg080o2jt5::::res://assets/GUI/Button_Blue_Pressed.png<>uid://din16tm1x8u2p::::res://assets/Fonts/Retro Gaming.ttf
+player.gd::GDScript::-1::1726070483::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::5590662262300636937::1726071479::0::1::::<><>::res://src/player.gd<>uid://bqihsgy413b5x::::res://assets/player.png
+tower.gd::GDScript::-1::1726071427::0::1::::<>StaticBody2D<>::
+tower.tscn::PackedScene::6649345763425245638::1726071479::0::1::::<><>::uid://b14lq3cn2icbc::::res://assets/Tower.png<>res://src/tower.gd<>uid://brycdvlcpm3i7::::res://assets/Tower_Destroyed.png
+world.gd::GDScript::-1::1726071478::0::1::::<>Node2D<>::
+world.tscn::PackedScene::3062305351100080702::1726071501::0::1::::<><>::uid://clwfnjujfili4::::res://src/player.tscn<>res://src/world.gd<>uid://c1y80u0oppgnm::::res://src/tower.tscn<>uid://dm0uh8kh61a5a::::res://src/enemy.tscn<>uid://cwvcvcu4kbe8w::::res://assets/tilemap/Tilemap_Flat.png<>uid://bjmrtspndgwy0::::res://assets/tilemap/Tilemap_Elevation.png<>uid://b13fj5bu8028r::::res://assets/GUI/health_bar_underlayer.png<>uid://din16tm1x8u2p::::res://assets/Fonts/Retro Gaming.ttf

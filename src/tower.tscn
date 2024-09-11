@@ -1,0 +1,47 @@
+[gd_scene load_steps=6 format=3 uid="uid://c1y80u0oppgnm"]
+
+[ext_resource type="Texture2D" uid="uid://b14lq3cn2icbc" path="res://assets/Tower.png" id="1_c86cw"]
+[ext_resource type="Script" path="res://src/tower.gd" id="1_yj2i1"]
+[ext_resource type="Texture2D" uid="uid://brycdvlcpm3i7" path="res://assets/Tower_Destroyed.png" id="2_7gj87"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_grkwj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_c86cw")
+}],
+"loop": true,
+"name": &"base animation",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_7gj87")
+}],
+"loop": true,
+"name": &"dead",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_micg4"]
+radius = 34.0
+height = 86.0
+
+[node name="Tower" type="StaticBody2D"]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(0, -10)
+disable_mode = 2
+script = ExtResource("1_yj2i1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -51)
+sprite_frames = SubResource("SpriteFrames_grkwj")
+animation = &"dead"
+offset = Vector2(0, -35)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+z_index = 2
+position = Vector2(0, -26)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_micg4")
